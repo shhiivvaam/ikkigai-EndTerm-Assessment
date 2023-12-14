@@ -3,4 +3,4 @@
 ## Weather Application
 
 ## Live Link -
-    https://shhiivvaam.github.io/Weather-Application-ikkigai-EndTerm-Assessment/
+    https://shhiivvaam.github.io/ikkigai-EndTerm-Assessment/
