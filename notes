@@ -1,0 +1,14 @@
+apikey : d1845658f92b31c64bd94f06f7188c9c
+
+link : 
+
+    // API callable
+    > https://api.openweathermap.org/data/2.5/weather?q=goa&appid=d1845658f92b31c64bd94f06f7188c9c&units=metric
+
+    > https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric
+
+    // fetches Country Image
+    > https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png
+
+    // fetches weather Icon
+    > http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png

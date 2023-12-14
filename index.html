@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- font-awesome icons -->
+    <script src="https://kit.fontawesome.com/30a725c95e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- header section -->
+        <header class="">
+            <h1>Weather App</h1>
+        </header>
+
+        <div class="tab-container">
+            <p class="tab" data-userweather>Your Weather</p>
+            <p class="tab" data-searchweather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+            <!-- Grant Access to Location -->
+            <div class="sub-container grant-location-container">
+                <img src="./assets//location.png" alt="Image" height="80" width="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow access to get Weather Information</p>
+                <button class="btn" data-grantaccess>Grant Access</button>
+            </div>
+
+            <!-- Search Weather Form -->
+            <form action="" class="form-container" data-searchform>
+                <input type="text" placeholder="Search for city..." data-searchinput>
+                <button class="btn" type="submit">
+                    <img src="./assets//search.png" alt="Image" width="20" height="20" loading="lazy ">
+                </button>
+            </form>
+
+            <!-- Loading Screen Container -->
+            <div class="sub-container loading-container">
+                <img src="./assets//loading.gif" alt="Image" width="150" height="150">
+                <p>Loading</p>
+            </div>
+
+            <!-- Show Weather Info -->
+            <div class="sub-container user-info-container">
+
+                <!-- city name and flag -->
+                <div class="name">
+                    <p data-cityname></p>
+                    <img data-countryicon alt="Image">
+                </div>
+
+
+                <!-- weather description -->
+                <p data-weatherdesc></p>
+
+                <!-- weather Icon -->
+                <img data-weathericon alt="Image">
+
+                <!-- temperature -->
+                <p data-temp></p>
+
+                <!-- 3 cards - parameter -->
+                <div class="parameter-container">
+
+                    <!-- card 1 -->
+                    <div class="parameter">
+                        <img src="./assets/wind.png" alt="Image">
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="parameter">
+                        <img src="./assets/humidity.png" alt="Image">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="parameter">
+                        <img src="./assets/cloud.png" alt="Image">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer section -->
+        <footer>
+            <div class="footer">
+                <p>
+                    Build with love 
+                        <!-- <i class="fa-solid fa-heart fa-beat fa-xs" style="color: #9a477b;"></i> -->
+                        <i class="animate-pulse">&#10084; &nbsp;</i>
+                        <i class="animate-bounce ">
+                            shhiivvaam
+                        </i>
+                        <sup>&copy; </sup>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
